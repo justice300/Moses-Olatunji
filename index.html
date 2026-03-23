@@ -661,7 +661,7 @@
 
     <button id="backToTop" title="Go to top">↑</button>
 
-    <div id="lightbox" style="display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); cursor: zoom-out; align-items: center; justify-content: center;">
+    <div id="lightbox">
     <img id="lightbox-img" src="" style="max-width: 90%; max-height: 90%; border-radius: 10px; box-shadow: 0 0 30px rgba(0,0,0,0.5);">
     </div>
 
@@ -750,12 +750,29 @@
         }
 
         #lightbox {
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+
             opacity: 0;
+            pointer-events: none;
             transition: opacity 0.3s ease;
-        }
-        #lightbox.show {
             display: flex;
+        }
+
+        #lightbox.show {
             opacity: 1;
+            pointer-events: auto;
+        }
+        .flyer-img {
+            cursor: pointer;
         }
     </style>
 
@@ -766,13 +783,13 @@
 
         document.querySelectorAll('.flyer-img').forEach(image => {
             image.addEventListener('click', () => {
-                lightbox.style.display = 'flex';
                 lightboxImg.src = image.src;
+                lightbox.classList.add('show'); // ✅ use class instead
             });
         });
 
         lightbox.addEventListener('click', () => {
-            lightbox.style.display = 'none';
+            lightbox.classList.remove('show'); // ✅ remove class
         });
 
         //bBack to Top Logic
