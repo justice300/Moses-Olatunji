@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia's Laundromat - Moses Olatunji</title>
+    <style>
+        :root {
+            --bg-dark: #0a0a0e;
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --primary: #00f2ea;
+            --text-main: #ffffff;
+            --text-muted: #b3b3b3;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container { 
+            width: 100%;
+            max-width: 1000px;
+            padding: 40px 20px;
+        }
+
+        nav { width: 100%; margin-bottom: 60px; }
+        .btn-back {
+            color: var(--primary);
+            text-decoration: none;
+            border: 1px solid var(--primary);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn-back:hover { background: var(--primary); color: #000; }
+
+        header { text-align: center; margin-bottom: 80px; }
+        h1 { font-size: clamp(2.5rem, 7vw, 4rem); margin: 0; letter-spacing: -2px; }
+        .subtitle { color: var(--text-muted); font-size: 1.2rem; margin-top: 10px; }
+
+        /* THE SINGLE COLUMN FEED */
+        .project-feed {
+            display: flex;
+            flex-direction: column;
+            gap: 80px; /* Space between images */
+        }
+
+        .artboard-container {
+            width: 100%;
+            text-align: center;
+        }
+
+        .artboard-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .caption {
+            margin-top: 20px;
+            color: var(--text-muted);
+            font-size: 1rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer { padding: 100px 0; text-align: center; }
+
+        /* MOBILE FIXES */
+        @media (max-width: 600px) {
+            .project-feed { gap: 40px; }
+            .container { padding: 20px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav><a href="index.html" class="btn-back">← Back to Portfolio</a></nav>
+
+        <header>
+            <h1>Olivia's <span style="color: var(--primary)">Laundromat</span></h1>
+            <p class="subtitle">Full Brand Identity Presentation</p>
+        </header>
+
+        <main class="project-feed">
+            
+            <div class="artboard-container">
+                <img src="images/Artboard-1.jpg" alt="Artboard 1">
+                <p class="caption">Brand Application: Logistics and Transport</p>
+            </div>
+
+            <div class="artboard-container">
+                <img src="images/Artboard-2.jpg" alt="Artboard 2">
+                <p class="caption">Logo Visual Identity on Dark Background</p>
+            </div>
+
+            <div class="artboard-container">
+                <img src="images/Artboard-5.jpg" alt="Artboard 5">
+                <p class="caption">The Core Philosophy & Strategy</p>
+            </div>
+
+            <div class="artboard-container">
+                <img src="images/Artboard-7.jpg" alt="Artboard 7">
+                <p class="caption">Geometric Construction & Grid System</p>
+            </div>
+
+            <div class="artboard-container">
+                <img src="images/Artboard-8.jpg" alt="Artboard 8">
+                <p class="caption">Primary, Vertical, and Icon versions</p>
+            </div>
+
+            <div class="artboard-container">
+                <img src="images/Artboard-4.jpg" alt="Artboard 4">
+                <p class="caption">Color System & HEX Codes</p>
+            </div>
+
+            <div class="artboard-container">
+                <img src="images/Artboard-6.jpg" alt="Artboard 6">
+                <p class="caption">Brand Pattern for Packaging & Stationery</p>
+            </div>
+
+            <div class="artboard-container">
+                <img src="images/Artboard-3.jpg" alt="Artboard 3">
+                <p class="caption">Digital Experience & App Iconography</p>
+            </div>
+
+            <div class="artboard-container">
+                <img src="images/Artboard-9.jpg" alt="Artboard 9">
+                <p class="caption">Physical Touchpoints & Packaging</p>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Project Designed by Moses Olatunji</p>
+        </footer>
+    </div>
+
+</body>
+</html>

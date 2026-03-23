@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Moses Olatunji</title>
+    <style>
+        :root {
+            --bg-dark: #0a0a0e;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --primary: #00f2ea;
+            --secondary: #ff0055;
+            --accent: #7000ff;
+            --text-main: #ffffff;
+            --text-muted: #b3b3b3;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+        
+        .background-blobs {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden;
+            background: radial-gradient(circle at 15% 50%, rgba(112, 0, 255, 0.15), transparent 25%),
+                        radial-gradient(circle at 85% 30%, rgba(255, 0, 85, 0.15), transparent 25%);
+        }
+
+        .container { max-width: 1000px; /* Made slightly narrower for better reading readability */ margin: 0 auto; padding: 0 24px; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        img { max-width: 100%; display: block; border-radius: 16px; margin-bottom: 30px;}
+
+        .text-gradient { background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; }
+        
+        .btn-glow {
+            display: inline-block; background: linear-gradient(45deg, var(--accent), var(--secondary)); color: #fff;
+            padding: 12px 28px; border-radius: 50px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+            box-shadow: 0 0 20px rgba(255, 0, 85, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn-glow:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 0 30px rgba(255, 0, 85, 0.7); }
+        
+        .btn-outline {
+            display: inline-block; border: 1px solid var(--text-muted); color: var(--text-muted);
+            padding: 10px 24px; border-radius: 50px; margin-bottom: 40px; transition: 0.3s;
+        }
+        .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+
+        header { padding: 25px 0; display: flex; justify-content: space-between; align-items: center; backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .logo { font-weight: 800; font-size: 1.5rem; letter-spacing: -0.5px; }
+
+        /* --- PROJECT SPECIFIC STYLES --- */
+        .project-header { text-align: center; padding: 60px 0 40px 0; }
+        .project-header h1 { font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
+        
+        .project-meta { display: flex; justify-content: center; gap: 30px; margin-bottom: 40px; color: var(--text-muted); flex-wrap: wrap; }
+        .meta-item strong { color: var(--primary); display: block; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        
+        .project-content { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 80px; }
+        .project-content h2 { color: var(--text-main); font-size: 2rem; margin: 40px 0 20px 0; text-align: left;}
+        .project-content p { margin-bottom: 20px; }
+        
+        .main-image { box-shadow: 0 20px 50px rgba(0,0,0,0.5); border: 1px solid var(--glass-border); width: 100%; }
+
+        footer { padding: 40px 0; border-top: 1px solid var(--glass-border); text-align: center; font-size: 0.8rem; color: #666; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <div class="background-blobs"></div>
+
+    <div class="container" style="max-width: 1200px;">
+        <header>
+            <div class="logo"><a href="index.html">Moses Olatunji</a></div>
+            <a href="index.html" class="btn-outline">← Back to Portfolio</a>
+        </header>
+    </div>
+
+    <div class="container">
+        <section class="project-header">
+            <h1>Ladies, Home Page Redesign</h1>
+            
+            <div class="project-meta">
+                <div class="meta-item">
+                    <strong>Role</strong>
+                    UI/UX Designer
+                </div>
+                <div class="meta-item">
+                    <strong>Timeline</strong>
+                    3 Weeks
+                </div>
+                <div class="meta-item">
+                    <strong>Tools</strong>
+                    Figma, Adobe Illustrator
+                </div>
+            </div>
+
+            <img src="https://placehold.co/1200x600/222/FFF?text=Main+Project+Showcase+Image" alt="Main Project Image" class="main-image">
+        </section>
+
+        <section class="project-content">
+            <h2><span class="text-gradient">The Challenge</span></h2>
+            <p>The client approached me with an outdated website that had a high bounce rate. The goal was to completely overhaul the user experience, making it more intuitive for their target audience while modernizing the aesthetic to match their new brand guidelines.</p>
+
+            <h2><span class="text-gradient">My Approach</span></h2>
+            <p>I started by conducting user research to understand where the current friction points were. From there, I developed wireframes and low-fidelity prototypes. Once the structure was approved, I moved into high-fidelity design, focusing on a dark-mode theme with vibrant neon accents to make the calls-to-action pop.</p>
+
+            <img src="https://placehold.co/1200x600/222/FFF?text=Behind+The+Scenes+Process" alt="Design Process">
+
+            <h2><span class="text-gradient">The Result</span></h2>
+            <p>After launching the new design, the client saw a 40% increase in user retention and a significant bump in conversion rates. The interface is now fully responsive, ensuring a seamless experience across all devices.</p>
+        </section>
+
+        <div style="text-align: center; padding-bottom: 80px;">
+            <a href="#" class="btn-glow">View Live Project</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Moses Olatunji. Designed with AI.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

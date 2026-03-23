@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitual | UI/UX Case Study</title>
+    <style>
+        :root {
+            --bg-dark: #0f0f0f;
+            --accent: #FFD700; 
+            --glass: rgba(255, 255, 255, 0.05);
+            --text-gray: #ccc;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        .case-study-hero {
+            padding: 120px 10% 60px;
+            text-align: center;
+            background: linear-gradient(to bottom, #1a1a1a, var(--bg-dark));
+        }
+
+        .category-tag {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        h1 { font-size: 3.5rem; margin: 15px 0; letter-spacing: -1px; }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px 10%;
+            border-top: 1px solid var(--glass);
+            border-bottom: 1px solid var(--glass);
+        }
+
+        .stat-item h4 { color: #888; margin-bottom: 8px; text-transform: uppercase; font-size: 0.75rem; }
+        
+        .content-container {
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .case-study-img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+            margin-bottom: 100px;
+            border: 1px solid var(--glass);
+            display: block;
+        }
+
+        .text-block {
+            margin-bottom: 45px;
+            max-width: 800px;
+        }
+
+        .text-block h3 {
+            color: white;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .text-block h3::before {
+            content: "";
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 30px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .footer-nav { text-align: center; padding: 100px 0; border-top: 1px solid var(--glass); }
+
+        .back-btn {
+            display: inline-block;
+            padding: 18px 45px;
+            color: white;
+            text-decoration: none;
+            border: 1px solid var(--accent);
+            border-radius: 40px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover { background: var(--accent); color: #000; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .text-block h3::before { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="case-study-hero">
+        <span class="category-tag">UX Research & Interface Design</span>
+        <h1>Habitual</h1>
+        <p>A deep dive into the branding and user experience of daily essentials.</p>
+    </section>
+
+    <div class="overview-grid">
+        <div class="stat-item"><h4>Role</h4><p>UI/UX Designer</p></div>
+        <div class="stat-item"><h4>Timeline</h4><p>4 Weeks</p></div>
+        <div class="stat-item"><h4>Project</h4><p>E-Commerce</p></div>
+        <div class="stat-item"><h4>Tools</h4><p>Figma, Adobe CC</p></div>
+    </div>
+
+    <div class="content-container">
+        
+        <div class="text-block">
+            <h3>Visual Concept</h3>
+            <p>Habitual is designed to provide a high-end, clean aesthetic for the everyday shopper, focusing on clarity and ease of use.</p>
+        </div>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/792e04182219495.652974bb65580.png" class="case-study-img">
+
+        <div class="text-block">
+            <h3>Project Overview</h3>
+            <p>Defining the core mission: bridging the gap between luxury branding and the practical needs of grocery and home shopping.</p>
+        </div>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/3fcc47182219495.65299ad0976a7.png" class="case-study-img">
+
+        <div class="text-block">
+            <h3>The Problem Space</h3>
+            <p>Identifying key friction points in the user journey, such as information overload and complex checkout flows.</p>
+        </div>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/83fd39182219495.652d30d7d0d95.png" class="case-study-img">
+
+        <div class="text-block">
+            <h3>Design Solutions</h3>
+            <p>Implementing strategic fixes like personalized category filtering and a simplified, one-page transaction process.</p>
+        </div>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2bdf2e182219495.652d30d7d1ae3.png" class="case-study-img">
+
+        <div class="text-block">
+            <h3>Information Architecture</h3>
+            <p>Mapping out a seamless sitemap to ensure that every product is reachable within three taps of the home screen.</p>
+        </div>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2dbd94182219495.652d30d7cf2eb.png" class="case-study-img">
+
+        <div class="text-block">
+            <h3>Style Guide & Branding</h3>
+            <p>Establishing a vibrant visual foundation using a signature gold accent, robust sans-serif typography, and custom iconography.</p>
+        </div>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/55126a182219495.652d5cb678b46.png" class="case-study-img">
+
+        <div class="text-block">
+            <h3>Target Audience & Research</h3>
+            <p>Developing deep-dive personas to understand the specific shopping habits and frustrations of our core user demographics.</p>
+        </div>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/77bd06182219495.652eec1f0c689.png" class="case-study-img">
+
+        <div class="text-block">
+            <h3>User Personas</h3>
+            <p>Mapping out emotional and functional needs to ensure the UI design addresses the diverse lifestyles of Habitual's users.</p>
+        </div>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/a5e5f4182219495.652eec1f0d0f2.png" class="case-study-img">
+
+        <div class="text-block">
+            <h3>High-Fidelity Mockups</h3>
+            <p>The final design implementation showcasing the fluid navigation and high-contrast interface across the entire app ecosystem.</p>
+        </div>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/6d3c7b182219495.652d30d7d2815.png" class="case-study-img">
+
+        <div class="footer-nav">
+            <a href="index.html" class="back-btn">← Back to Portfolio</a>
+        </div>
+    </div>
+
+</body>
+</html>
