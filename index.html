@@ -361,6 +361,60 @@
                 display: flex; /* Reveals the indicator on mobile */
             }
         }
+
+        /* --- FIXED HEADER & NAV --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 12px; /* Tightens the space between CV and Hire Me */
+        }
+
+        nav a {
+            margin-left: 0 !important; /* Overriding your old 30px margin */
+            white-space: nowrap;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 480px) {
+            .logo { font-size: 1.2rem; } /* Shrinks name slightly so buttons fit */
+            nav a.cta { padding: 6px 15px; }
+        }
+
+        /* --- SWIPE INDICATOR (BELOW IMAGES) --- */
+        .swipe-indicator {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-top: -10px; /* Pulls it up closer to the cards */
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .swipe-indicator i {
+            animation: swipe-bounce 1.5s infinite ease-in-out;
+        }
+
+        @keyframes swipe-bounce {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(8px); }
+        }
+
+        @media (min-width: 768px) {
+            .swipe-indicator { display: none; } /* Hide on desktop where scrollbar is visible */
+        }
     </style>
 </head>
 <body>
@@ -445,10 +499,12 @@
             <details class="category-dropdown" open>
                 <summary>Flyer Design</summary>
                 <div class="dropdown-content">
-                    <h3 class="sub-category-title">
-                        Church Flyers
-                        <span class="swipe-indicator">Swipe <i class="fas fa-arrow-right"></i></span>
-                    </h3>
+                    <h3 class="sub-category-title">Church Flyers</h3>
+                        <div class="carousel-container">
+                            </div> 
+                        <div class="swipe-indicator">
+                            Swipe for more <i class="fas fa-arrow-right"></i>
+                        </div>
                     <div class="carousel-container">
                         <div class="card">
                             <img src="images/fathers-blessing.jpg"loading="lazy" alt="Father's Blessings" class="flyer-img">
@@ -477,10 +533,12 @@
                         </div>
                     </div> 
 
-                    <h3 class="sub-category-title">
-                        Marketing Flyers
-                        <span class="swipe-indicator">Swipe <i class="fas fa-arrow-right"></i></span>
-                    </h3>
+                    <h3 class="sub-category-title">Marketing Flyers</h3>
+                    <div class="carousel-container">
+                        </div>
+                    <div class="swipe-indicator">
+                        Swipe for more <i class="fas fa-arrow-right"></i>
+                    </div>
                     <div class="carousel-container">
                         <div class="card">
                             <img src="images/TST-1.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
