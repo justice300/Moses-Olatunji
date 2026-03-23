@@ -322,7 +322,7 @@
 
        .card a img {
             width: 100%;
-            height: 220px; /* Forces a uniform height */
+            height: 220px;
             object-fit: cover; /* Crops the image to fit the box without stretching */
             object-position: top; /* Keeps the most important part of the design visible */
             transition: 0.3s;
@@ -415,6 +415,22 @@
         @media (min-width: 768px) {
             .swipe-indicator { display: none; } /* Hide on desktop where scrollbar is visible */
         }
+
+        .carousel-wrapper {
+            position: relative;
+        }
+
+        .swipe-indicator {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .carousel-container {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .carousel-container {
+            -webkit-overflow-scrolling: touch;
+        }
     </style>
 </head>
 <body>
@@ -499,122 +515,123 @@
             <details class="category-dropdown" open>
                 <summary>Flyer Design</summary>
                 <div class="dropdown-content">
-                    <h3 class="sub-category-title">Church Flyers</h3>
-                        <div class="carousel-container">
-                            </div> 
-                        <div class="swipe-indicator">
-                            Swipe for more <i class="fas fa-arrow-right"></i>
-                        </div>
-                    <div class="carousel-container">
-                        <div class="card">
-                            <img src="images/fathers-blessing.jpg"loading="lazy" alt="Father's Blessings" class="flyer-img">
-                            <h3>Father's Blessings</h3>
-                            <p>Sunday Service Flyer</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/CH-1.jpg"loading="lazy" alt="Night of Worship" class="flyer-img">
-                            <h3>Night of Worship</h3>
-                            <p>Special Event Graphics</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/CH-2.jpg"loading="lazy" alt="Night of Worship" class="flyer-img">
-                            <h3>Night of Worship</h3>
-                            <p>Special Event Graphics</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/CH-3.jpg"loading="lazy" alt="Night of Worship" class="flyer-img">
-                            <h3>Night of Worship</h3>
-                            <p>Special Event Graphics</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/CH-4.jpg"loading="lazy" alt="Night of Worship" class="flyer-img">
-                            <h3>Night of Worship</h3>
-                            <p>Special Event Graphics</p>
-                        </div>
-                    </div> 
+               <h3 class="sub-category-title">Church Flyers</h3>
+
+            <div class="carousel-container">
+                <div class="card">
+                    <img src="images/fathers-blessing.jpg" loading="lazy" alt="Father's Blessings" class="flyer-img">
+                    <h3>Father's Blessings</h3>
+                    <p>Sunday Service Flyer</p>
+                </div>
+                <div class="card">
+                    <img src="images/CH-1.jpg" loading="lazy" alt="Night of Worship" class="flyer-img">
+                    <h3>Night of Worship</h3>
+                    <p>Special Event Graphics</p>
+                </div>
+                <div class="card">
+                    <img src="images/CH-2.jpg" loading="lazy" alt="Night of Worship" class="flyer-img">
+                    <h3>Night of Worship</h3>
+                    <p>Special Event Graphics</p>
+                </div>
+                <div class="card">
+                    <img src="images/CH-3.jpg" loading="lazy" alt="Night of Worship" class="flyer-img">
+                    <h3>Night of Worship</h3>
+                    <p>Special Event Graphics</p>
+                </div>
+                <div class="card">
+                    <img src="images/CH-4.jpg" loading="lazy" alt="Night of Worship" class="flyer-img">
+                    <h3>Night of Worship</h3>
+                    <p>Special Event Graphics</p>
+                </div>
+            </div>
+
+            <div class="swipe-indicator">
+                Swipe for more <i class="fas fa-arrow-right"></i>
+            </div>
 
                     <h3 class="sub-category-title">Marketing Flyers</h3>
-                    <div class="carousel-container">
-                        </div>
-                    <div class="swipe-indicator">
-                        Swipe for more <i class="fas fa-arrow-right"></i>
-                    </div>
-                    <div class="carousel-container">
-                        <div class="card">
-                            <img src="images/TST-1.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-2.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-3.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-4.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-5.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-6.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-7.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-8.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-9.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-10.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-11.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-12.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-13.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/TST-14.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/work-smart.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
-                            <h3>Black Friday Mega Sale</h3>
-                            <p>Social Media Ad</p>
-                        </div>
+
+            <div class="carousel-container">
+                <div class="card">
+                    <img src="images/TST-1.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-2.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-3.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-4.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-5.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-6.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-7.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-8.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-9.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-10.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-11.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-12.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-13.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/TST-14.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+                <div class="card">
+                    <img src="images/work-smart.jpg" loading="lazy" alt="Black Friday" class="flyer-img">
+                    <h3>Black Friday Mega Sale</h3>
+                    <p>Social Media Ad</p>
+                </div>
+            </div>
+
+            <div class="swipe-indicator">
+                Swipe for more <i class="fas fa-arrow-right"></i>
+            </div>
                     </div>
                 </div>
             </details>
@@ -723,7 +740,6 @@
             text-align: center;
             color: #888;
             font-size: 0.8rem;
-        }
         }
         .footer-bottom a { color: #444; margin-left: 15px; text-decoration: none; }
         .footer-bottom a:hover { color: var(--primary); }
