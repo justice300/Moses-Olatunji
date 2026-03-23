@@ -328,6 +328,39 @@
             transition: 0.3s;
             display: block;
         }
+
+        /* --- SWIPE INDICATOR (MOBILE ONLY) --- */
+        .swipe-indicator {
+            display: none; /* Hidden by default on larger screens */
+            font-size: 0.75rem;
+            color: var(--primary);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: none;
+            align-items: center;
+            gap: 6px;
+            opacity: 0.8;
+        }
+
+        .swipe-indicator i {
+            animation: swipe-bounce 1.5s infinite ease-in-out;
+        }
+
+        @keyframes swipe-bounce {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(5px); }
+        }
+
+        @media (max-width: 767px) {
+            .sub-category-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end; /* Keeps the indicator anchored to the bottom if the title wraps */
+            }
+            .swipe-indicator {
+                display: flex; /* Reveals the indicator on mobile */
+            }
+        }
     </style>
 </head>
 <body>
@@ -412,7 +445,10 @@
             <details class="category-dropdown" open>
                 <summary>Flyer Design</summary>
                 <div class="dropdown-content">
-                    <h3 class="sub-category-title">Church Flyers</h3>
+                    <h3 class="sub-category-title">
+                        Church Flyers
+                        <span class="swipe-indicator">Swipe <i class="fas fa-arrow-right"></i></span>
+                    </h3>
                     <div class="carousel-container">
                         <div class="card">
                             <img src="images/fathers-blessing.jpg"loading="lazy" alt="Father's Blessings" class="flyer-img">
@@ -441,7 +477,10 @@
                         </div>
                     </div> 
 
-                    <h3 class="sub-category-title">Marketing Flyers</h3>
+                    <h3 class="sub-category-title">
+                        Marketing Flyers
+                        <span class="swipe-indicator">Swipe <i class="fas fa-arrow-right"></i></span>
+                    </h3>
                     <div class="carousel-container">
                         <div class="card">
                             <img src="images/TST-1.jpg"loading="lazy" alt="Black Friday" class="flyer-img">
